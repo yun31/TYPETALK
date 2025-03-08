@@ -33,6 +33,14 @@ function ChatComponent() {
   const [inputMessage, setInputMessage] = useState("");
   const [receiving, setReceiving] = useState(false);
 
+  // 채팅창 스크롤
+  const chatWindowRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (chatWindowRef.current) {
+      chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+    }
+  }, [messages]);
+
   // 디버깅을 위한 메시지 변경 추적
   const messagesRef = useRef(messages);
   useEffect(() => {
@@ -124,7 +132,7 @@ function ChatComponent() {
         </button>
       </div>
 
-      <div className={styles.chatWindow}>
+      <div className={styles.chatWindow} ref={chatWindowRef}>
         {messages
           .filter((message) => message.role !== "system") // system 메시지 제외
           .map((message, index) =>
