@@ -8,7 +8,8 @@ export const connectMongoDB = async () => {
     }
     await mongoose.connect(uri);
     console.log("Connected to MongoDB");
-  } catch () {
+  } catch (error) {
+    console.log("Error!", error);
     //2.2.12 version 시도 (스타벅스 공유기 오류 방지)
     try {
       const uri2 = process.env.MONGODB_URI2;
