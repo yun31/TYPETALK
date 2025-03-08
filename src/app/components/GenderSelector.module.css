@@ -1,0 +1,23 @@
+.genderContainer {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.genderButton {
+  background: #91a6c1;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.genderButton:hover:not(.selected) {
+  background: #7a8caa;
+}
+
+.selected {
+  background: #f8d046;
+}

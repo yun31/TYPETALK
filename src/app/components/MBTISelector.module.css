@@ -1,0 +1,24 @@
+.mbtiContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.mbtiButton {
+  background: #96a05a; /* 연두색 */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.mbtiButton:hover:not(.selected) {
+  background: #7b8749; /* 어두운 연두색 */
+}
+
+.selected {
+  background: #f8d046;
+}

@@ -1,0 +1,56 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 2rem;
+  background-color: #f5f0e4;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.label {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #ece5d6;
+  font-size: 1rem;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.startButton {
+  background: #2d4b3e;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.startButton:hover {
+  background: #1e362c;
+}
+
+.startButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,17 @@
+.header {
+  padding: 1rem 2rem;
+  height: 60px;
+  border-bottom: 1px solid #333;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  text-decoration: none;
+}

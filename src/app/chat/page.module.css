@@ -1,0 +1,106 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f0e4;
+  min-height: calc(100vh - 60px);
+}
+
+.header {
+  display: flex;
+  align-items: left;
+  gap: 0.6rem;
+  padding: 1rem;
+  background-color: #96a05a;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 60px;
+  z-index: 10;
+}
+
+.tag {
+  background: #f8f4e5;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.mbtiTag {
+  background: #ffd700;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.endChatButton {
+  margin-left: auto;
+  background: #2d4b3e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.endChatButton:hover {
+  background: #1e362c;
+}
+
+/* 채팅 메시지 영역 */
+.chatWindow {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background-color: #f5f0e4;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+  background-color: #f8f4e5;
+  outline: none;
+}
+
+.sendButton {
+  background: #7a8745;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+}
+
+.sendButton:hover {
+  background: #4d5723;
+}
+
+.sendIcon {
+  width: 24px;
+  height: 24px;
+}

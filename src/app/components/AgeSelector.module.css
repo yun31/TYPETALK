@@ -1,0 +1,24 @@
+.ageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.ageButton {
+  background: #91a6c1;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.ageButton:hover:not(.selected) {
+  background: #7a8caa;
+}
+
+.selected {
+  background: #f8d046;
+}

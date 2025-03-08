@@ -1,0 +1,37 @@
+/* 사용자 메시지 */
+.userMessage {
+  padding: 0.7rem;
+  border-radius: 20px;
+  max-width: 60%;
+  background: #91a6c1;
+  line-height: 1.5;
+  align-self: flex-end;
+  color: black;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* 봇 메시지 */
+.botMessage {
+  padding: 0.7rem;
+  border-radius: 20px;
+  max-width: 60%;
+  background: #f4e8cb;
+  line-height: 1.5;
+  align-self: flex-start;
+  color: black;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.userMessage pre {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.botMessage pre {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
