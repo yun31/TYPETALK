@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import styles from "./page.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 import { ChatBubbleUser } from "./components/chatBubbleUser";
@@ -9,7 +9,7 @@ import { createInitMsg, CreateMessage } from "@/lib/functions";
 import { ChatBubbleAssistant } from "./components/chatBubbleAssistant";
 import Image from "next/image";
 
-export default function ChatPage() {
+function ChatComponent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -161,5 +161,12 @@ export default function ChatPage() {
         </button>
       </form>
     </div>
+  );
+}
+export default function ChatPage() {
+  return (
+    <Suspense fallback={<div>Loading chat...</div>}>
+      <ChatComponent />
+    </Suspense>
   );
 }
