@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./authButton.module.css";
+import Image from "next/image";
 
 export default function AuthButtons() {
   return (
@@ -14,7 +15,7 @@ export default function AuthButtons() {
       <div className={styles.buttonCard}>
         <p>대화 기록을 저장할 수 있어요!</p>
         <button className={styles.googleButton}>
-          <img src="/assets/google.png" />
+          <Image alt="google" src="/assets/google.png" />
           Google로 로그인하기
         </button>
       </div>

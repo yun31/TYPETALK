@@ -7,6 +7,7 @@ import { ChatBubbleUser } from "./components/chatBubbleUser";
 import { Message } from "@/lib/types";
 import { createInitMsg, CreateMessage } from "@/lib/functions";
 import { ChatBubbleAssistant } from "./components/chatBubbleAssistant";
+import Image from "next/image";
 
 export default function ChatPage() {
   const searchParams = useSearchParams();
@@ -152,7 +153,11 @@ export default function ChatPage() {
           disabled={receiving || inputMessage.trim() === ""}
           type="submit"
         >
-          <img src="/assets/arrow.svg" alt="Send" className={styles.sendIcon} />
+          <Image
+            src="/assets/arrow.svg"
+            alt="Send"
+            className={styles.sendIcon}
+          />
         </button>
       </form>
     </div>
